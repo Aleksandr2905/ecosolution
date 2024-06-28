@@ -1,4 +1,4 @@
-@import "../node_modules/normalize.css/normalize.css";
+@import '../node_modules/normalize.css/normalize.css';
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -26,6 +26,8 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* ===================== RESET STYLE ==================== */
 
 html,
 body,
@@ -112,4 +114,76 @@ th {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+/* ===================== FONTS ==================== */
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: local('Fira Sans Regular'), local('Fira-Sans-Regular'),
+    url('./assets/fonts/FiraSans/FiraSans-Regular.woff2') format('woff2'),
+    url('./assets/fonts/FiraSans/FiraSans-Regular.woff') format('woff'),
+    url('./assets/fonts/FiraSans/FiraSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira Sans Light';
+  src: local('Fira Sans Light'), local('Fira-Sans-Light'),
+    url('./assets/fonts/FiraSans/FiraSans-Light.woff2') format('woff2'),
+    url('./assets/fonts/FiraSans/FiraSans-Light.woff') format('woff'),
+    url('./assets/fonts/FiraSans/FiraSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Oswald Regular';
+  src: local('Oswald Regular'), local('Oswald-Regular'),
+    url('./assets/fonts/Oswald/Oswald-Regular.woff2') format('woff2'),
+    url('./assets/fonts/Oswald/Oswald-Regular.woff') format('woff'),
+    url('./assets/fonts/Oswald/Oswald-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Oswald Bold';
+  src: local('Oswald Bold'), local('Oswald-Bold'),
+    url('./assets/fonts/Oswald/Oswald-Bold.woff2') format('woff2'),
+    url('./assets/fonts/Oswald/Oswald-Bold.woff') format('woff'),
+    url('./assets/fonts/Oswald/Oswald-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CA Saygon Text';
+  src: local('CA Saygon Text Regular'), local('CA-Saygon-Text-Regular'),
+    url('./assets/fonts/Saygon/CASaygonText-Regular.woff2') format('woff2'),
+    url('./assets/fonts/Saygon/CASaygonText-Regular.woff') format('woff'),
+    url('./assets/fonts/Saygon/CASaygonText-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fontspring';
+  src: local('Fontspring DEMO allroundgothic thick'),
+    local('Fontspring-DEMO-allroundgothic-thick'),
+    url('./assets/fonts/Fontspring/Fontspring-DEMO-allroundgothic-thick.woff2')
+      format('woff2'),
+    url('./assets/fonts/Fontspring/Fontspring-DEMO-allroundgothic-thick.woff')
+      format('woff'),
+    url('./assets/fonts/Fontspring/Fontspring-DEMO-allroundgothic-thick.ttf')
+      format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
