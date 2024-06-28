@@ -16,10 +16,8 @@
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  --primary-color: #173d33;
+  /* min-width: 360px; */
   min-height: 100vh;
 }
 
