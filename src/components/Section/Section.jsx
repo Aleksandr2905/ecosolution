@@ -1,11 +1,14 @@
 import * as s from './Section.styled';
 
-const Section = ({ id, title, children }) => {
+const Section = ({ id, sectionStyle, title, titleStyle, children }) => {
+  const SectionPrimary = s[sectionStyle] || s.Section;
+  const TitleSection = s[titleStyle] || s.Title;
+
   return (
-    <s.Section id={id}>
-      <s.Title>{title}</s.Title>
+    <SectionPrimary id={id}>
+      <TitleSection>{title}</TitleSection>
       {children}
-    </s.Section>
+    </SectionPrimary>
   );
 };
 

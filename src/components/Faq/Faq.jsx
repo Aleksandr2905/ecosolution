@@ -1,5 +1,14 @@
+import { text } from '../../data/faq';
+import Section from '../Section/Section';
+
 const Faq = () => {
-  return <div>Faq</div>;
+  const { id, title } = text;
+
+  return (
+    <Section id={id} title={title}>
+      <div>Faq</div>
+    </Section>
+  );
 };
 
 export default Faq;

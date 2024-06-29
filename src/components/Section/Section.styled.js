@@ -7,6 +7,10 @@ export const Section = styled.section`
   padding: 0 20px;
 `;
 
+export const MainSection = styled(Section)`
+  margin: 222px auto 0;
+`;
+
 export const Title = styled.h2`
   margin-bottom: 24px;
   font-family: Oswald Regular, sans-serif;
@@ -15,4 +19,12 @@ export const Title = styled.h2`
   line-height: 100%;
   text-transform: uppercase;
   color: var(--primary-color);
+`;
+
+export const MainTitle = styled(Title)`
+  font-size: 36px;
+`;
+
+export const TitleCenter = styled(Title)`
+  text-align: center;
 `;
