@@ -28,7 +28,7 @@ export const Count = styled.h3`
   line-height: 100%;
   text-transform: uppercase;
   color: var(--light-green);
-  letter-spacing: -0.1px;
+  letter-spacing: -0.3px;
 `;
 
 export const Units = styled.h4`

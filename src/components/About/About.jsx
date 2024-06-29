@@ -8,7 +8,6 @@ const About = () => {
   return (
     <Section id={id} title={title}>
       <s.SubTitle>{description}</s.SubTitle>
-      <div>About</div>
     </Section>
   );
 };
