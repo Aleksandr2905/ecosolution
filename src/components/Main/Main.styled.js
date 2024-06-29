@@ -6,7 +6,6 @@ export const SubTitle = styled.p`
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
-  /* letter-spacing: -0.64px; */
   color: var(--primary-color);
 `;
 
