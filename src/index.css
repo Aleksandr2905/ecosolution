@@ -5,10 +5,6 @@
   line-height: 1;
   font-weight: 400;
 
-  /* color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424; */
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -16,9 +12,13 @@
 }
 
 body {
+  background-color: var(--bg-color-main);
+  --transition: all 0.3s ease-in-out;
+  --bg-color-main: #f3f5fa;
+  --bg-header-hover: #ffffff;
   --primary-color: #173d33;
-  /* min-width: 360px; */
-  min-height: 100vh;
+  --light-green: #97d28b;
+  --pale-green: #dcefd8;
 }
 
 html {
@@ -161,7 +161,7 @@ a {
 }
 
 @font-face {
-  font-family: 'CA Saygon Text';
+  font-family: 'Saygon';
   src: local('CA Saygon Text Regular'), local('CA-Saygon-Text-Regular'),
     url('./assets/fonts/Saygon/CASaygonText-Regular.woff2') format('woff2'),
     url('./assets/fonts/Saygon/CASaygonText-Regular.woff') format('woff'),
@@ -175,9 +175,9 @@ a {
   font-family: 'Fontspring';
   src: local('Fontspring DEMO allroundgothic thick'),
     local('Fontspring-DEMO-allroundgothic-thick'),
-    url('./assets/fonts/Fontspring/Fontspring-DEMO-allroundgothic-thick.woff2')
-      format('woff2'),
-    url('./assets/fonts/Fontspring/Fontspring-DEMO-allroundgothic-thick.woff')
+    /* url('./assets/fonts/Fontspring/Fontspring-DEMO-allroundgothic-thick.woff2')
+      format('woff2'), */
+      url('./assets/fonts/Fontspring/Fontspring-DEMO-allroundgothic-thick.woff')
       format('woff'),
     url('./assets/fonts/Fontspring/Fontspring-DEMO-allroundgothic-thick.ttf')
       format('truetype');
