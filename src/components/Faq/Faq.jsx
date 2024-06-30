@@ -3,9 +3,10 @@ import { text } from '../../data/faq';
 import Section from '../Section/Section';
 import sprite from '../../assets/icons/sprite.svg';
 import * as s from './Faq.styled';
+import Button from '../Button/Button';
 
 const Faq = () => {
-  const { id, title, listFaq } = text;
+  const { id, title, listFaq, notAnswer, button } = text;
   const [activeIndex, setActiveIndex] = useState(0);
 
   const toggleFaq = (index) => {
@@ -31,6 +32,8 @@ const Faq = () => {
           </s.Item>
         ))}
       </s.List>
+      <s.NotAnswer>{notAnswer}</s.NotAnswer>
+      <Button text={button} />
     </Section>
   );
 };

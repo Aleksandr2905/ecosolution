@@ -31,8 +31,8 @@ const Main = () => {
         </svg>
       </s.Button>
       <s.ContactBlock>
-        <s.Text>{address}</s.Text>
-        <s.Text>{email}</s.Text>
+        <s.Address>{address}</s.Address>
+        <s.Email href={`mailto:${email}`}>{email}</s.Email>
       </s.ContactBlock>
       <picture>
         <source

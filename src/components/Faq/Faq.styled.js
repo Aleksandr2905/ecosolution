@@ -50,3 +50,8 @@ export const Answer = styled.p`
   letter-spacing: -0.56px;
   color: var(--primary-color);
 `;
+
+export const NotAnswer = styled(Question)`
+  margin: 36px 0 12px;
+  text-align: center;
+`;

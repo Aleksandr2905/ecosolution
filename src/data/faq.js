@@ -38,4 +38,6 @@ export const text = {
         'EcoSolution fosters community engagement by collaborating with local stakeholders, providing education on renewable energy benefits, and offering job opportunities. Our commitment to a just transition involves prioritizing social equity, supporting local economies, and ensuring that the shift to renewable energy is inclusive and beneficial for all.',
     },
   ],
+  notAnswer: "Didn't find the answer to your question?",
+  button: 'Contact Us',
 };

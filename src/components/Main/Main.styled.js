@@ -56,7 +56,17 @@ export const ContactBlock = styled.div`
   border-top: 1px solid var(--light-green);
 `;
 
-export const Text = styled.p`
+export const Email = styled.a`
+  text-align: center;
+  font-family: 'Fira Sans';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  color: var(--primary-color);
+`;
+
+export const Address = styled.address`
   text-align: center;
   font-family: 'Fira Sans';
   font-size: 16px;
