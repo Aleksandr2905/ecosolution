@@ -43,7 +43,12 @@ const Main = () => {
           srcSet={`${imageAdaptive.oneX} 1x, ${imageAdaptive.twoX} 2x`}
           type="image/jpeg"
         />
-        <img src={imageAdaptive.oneX} alt="wind turbine" loading="lazy" />
+        <img
+          src={imageAdaptive.oneX}
+          alt="wind turbine"
+          width="100%"
+          height="100%"
+        />
       </picture>
     </Section>
   );
