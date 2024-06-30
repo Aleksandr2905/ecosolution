@@ -18,7 +18,7 @@ const Card = ({ slide }) => {
       </picture>
       <s.Info>
         <s.Title>{title}</s.Title>
-        <s.Button href="/">
+        <s.Button href="/" aria-label="button">
           <svg width="28" height="28">
             <use href={`${sprite}#arrow-right`} />
           </svg>
