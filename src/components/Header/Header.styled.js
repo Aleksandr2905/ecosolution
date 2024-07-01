@@ -1,10 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.header`
-  display: flex;
   width: 100%;
-  justify-content: space-between;
-  padding: 36px 20px;
   transition: var(--transition);
   background-color: ${({ $scrolled }) =>
     $scrolled ? 'var(--bg-header-hover)' : 'var(--bg-color-main)'};
@@ -12,4 +9,12 @@ export const Wrapper = styled.header`
   top: 0;
   left: 0;
   z-index: 100;
+`;
+
+export const Container = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 480px;
+  padding: 36px 20px;
 `;

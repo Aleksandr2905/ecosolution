@@ -23,8 +23,10 @@ const Header = () => {
 
   return (
     <s.Wrapper $scrolled={scrolled}>
-      <Logo />
-      <Burger />
+      <s.Container>
+        <Logo />
+        <Burger />
+      </s.Container>
     </s.Wrapper>
   );
 };
