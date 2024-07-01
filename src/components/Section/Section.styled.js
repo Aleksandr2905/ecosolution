@@ -19,6 +19,9 @@ export const Title = styled.h2`
   line-height: 100%;
   text-transform: uppercase;
   color: var(--primary-color);
+
+  padding-top: 120px;
+  margin-top: -120px;
 `;
 
 export const MainTitle = styled(Title)`
