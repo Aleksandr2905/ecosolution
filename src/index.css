@@ -20,6 +20,8 @@ body {
   --primary-color: #173d33;
   --light-green: #97d28b;
   --pale-green: #dcefd8;
+  --error: #d28b8b;
+  --placeholder: #bdbdbd;
 }
 
 html {
