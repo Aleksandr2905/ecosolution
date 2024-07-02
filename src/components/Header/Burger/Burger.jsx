@@ -1,7 +1,7 @@
 import { useState } from 'react';
-// import MobileMenu from '../MobileMenu/MobileMenu';
 import sprite from '../../../assets/icons/sprite.svg';
 import * as s from './Burger.styled';
+import Modal from '../../Modal/Modal';
 
 const Burger = () => {
   const [showNavMenu, setShowNavMenu] = useState(false);
@@ -21,7 +21,12 @@ const Burger = () => {
           <use href={`${sprite}#menu`} />
         </svg>
       </s.BurgerButton>
-      {/* {showMobileMenu ? <MobileMenu onClose={toggleMobileMenu} /> : null} */}
+      {showNavMenu && (
+        <Modal
+          show={showNavMenu}
+          handleClose={() => setShowNavMenu(false)}
+        ></Modal>
+      )}
     </div>
   );
 };
