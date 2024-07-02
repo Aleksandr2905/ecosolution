@@ -1,22 +1,22 @@
 export const navigation = [
   {
-    href: '#main',
+    href: 'main',
     name: 'Main',
   },
   {
-    href: '#about',
+    href: 'about',
     name: 'About',
   },
   {
-    href: '#cases',
+    href: 'cases',
     name: 'Cases',
   },
   {
-    href: '#faq',
+    href: 'faq',
     name: 'FAQ',
   },
   {
-    href: '#contact',
+    href: 'contact',
     name: 'Contact Us',
   },
 ];

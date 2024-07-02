@@ -41,7 +41,7 @@ export const NavItem = styled.a`
     }
   }
 
-  .active {
+  &.active {
     color: var(--light-green);
 
     svg {

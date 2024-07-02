@@ -2,16 +2,8 @@ import { navigation } from '../../../data/navigation';
 import sprite from '../../../assets/icons/sprite.svg';
 import Social from '../../Social/Social';
 import * as s from './NavMenu.styled';
-import { useState } from 'react';
 
-const NavMenu = ({ handleClose }) => {
-  const [activeLink, setActiveLink] = useState('href');
-
-  const handleLinkClick = (href) => {
-    setActiveLink(href);
-    if (handleClose) handleClose();
-  };
-
+const NavMenu = ({ handleClose, activeSection }) => {
   return (
     <s.Wrapper>
       <nav>
@@ -19,9 +11,9 @@ const NavMenu = ({ handleClose }) => {
           {navigation.map(({ href, name }) => (
             <li key={name}>
               <s.NavItem
-                href={href}
-                onClick={() => handleLinkClick(href)}
-                className={activeLink === href ? 'active' : ''}
+                href={`#${href}`}
+                onClick={handleClose}
+                className={activeSection === href ? 'active' : ''}
               >
                 {name}
                 <svg width="16" height="16">
