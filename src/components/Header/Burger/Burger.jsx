@@ -2,6 +2,7 @@ import { useState } from 'react';
 import sprite from '../../../assets/icons/sprite.svg';
 import * as s from './Burger.styled';
 import Modal from '../../Modal/Modal';
+import NavMenu from '../../Modal/NavMenu/NavMenu';
 
 const Burger = () => {
   const [showNavMenu, setShowNavMenu] = useState(false);
@@ -22,10 +23,9 @@ const Burger = () => {
         </svg>
       </s.BurgerButton>
       {showNavMenu && (
-        <Modal
-          show={showNavMenu}
-          handleClose={() => setShowNavMenu(false)}
-        ></Modal>
+        <Modal show={showNavMenu} handleClose={() => setShowNavMenu(false)}>
+          <NavMenu handleClose={() => setShowNavMenu(false)} />
+        </Modal>
       )}
     </div>
   );

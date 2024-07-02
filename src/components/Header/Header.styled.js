@@ -4,7 +4,7 @@ export const Wrapper = styled.header`
   width: 100%;
   transition: var(--transition);
   background-color: ${({ $scrolled }) =>
-    $scrolled ? 'var(--bg-header-hover)' : 'var(--bg-color-main)'};
+    $scrolled ? 'var(--white)' : 'var(--bg-color-main)'};
   position: fixed;
   top: 0;
   left: 0;

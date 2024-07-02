@@ -2,8 +2,8 @@ import { social } from '../../data/social';
 import sprite from '../../assets/icons/sprite.svg';
 import * as s from './Social.styled';
 
-const Social = ({ contactStyle }) => {
-  const Wrapper = s[contactStyle] || s.Wrapper;
+const Social = ({ style }) => {
+  const Wrapper = s[style] || s.Wrapper;
   return (
     <Wrapper>
       {social.map(({ icon, link, label }) => (

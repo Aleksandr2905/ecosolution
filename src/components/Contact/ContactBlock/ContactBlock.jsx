@@ -46,7 +46,7 @@ const ContactBlock = () => {
       </li>
       <li>
         <s.Label>Social Networks:</s.Label>
-        <Social contactStyle="ContactWrapper" />
+        <Social style="ContactWrapper" />
       </li>
     </s.Wrapper>
   );

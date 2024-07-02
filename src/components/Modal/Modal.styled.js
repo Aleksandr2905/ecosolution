@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Backdrop = styled.div`
   display: flex;
-  position: absolute;
+  position: fixed;
   flex-direction: column;
   padding: 36px 20px;
   gap: 16px;
@@ -18,16 +18,14 @@ export const Backdrop = styled.div`
 `;
 
 export const Container = styled.div`
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center;
-  align-items: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: auto;
   width: 100%;
+  max-width: 440px;
   height: 100%;
   padding: 24px;
-  /* position: fixed;
-  top: 0;
-  right: 0; */
   border-radius: 25px;
   background: rgba(23, 61, 51, 0.75);
   backdrop-filter: blur(12.5px);
@@ -40,20 +38,26 @@ export const CloseBtn = styled.button`
   width: 100%;
   border: none;
   padding: 0 0 8px;
-  border-bottom: 1px solid var(--bg-header-hover);
+  border-bottom: 1px solid var(--white);
   background-color: transparent;
   font-family: Fira Sans;
   font-size: 20px;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.8px;
-  color: var(--bg-header-hover);
+  transition: var(--transition);
+  color: var(--white);
 
-  & svg {
-    fill: green;
+  svg {
+    stroke: var(--white);
     transition: var(--transition);
+  }
 
-    &:hover {
+  &:hover {
+    color: var(--light-green);
+
+    svg {
+      stroke: var(--light-green);
       transform: rotate(90deg);
     }
   }

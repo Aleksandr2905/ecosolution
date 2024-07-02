@@ -21,3 +21,10 @@ export const ContactWrapper = styled(Wrapper)`
     padding: 12px;
   }
 `;
+
+export const NavMenu = styled(Wrapper)`
+  svg {
+    fill: var(--white);
+    stroke: var(--white);
+  }
+`;
