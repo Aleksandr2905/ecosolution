@@ -1,5 +1,6 @@
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
+import { Report } from 'notiflix/build/notiflix-report-aio';
 import schema from '../../../helpers/validation';
 import sprite from '../../../assets/icons/sprite.svg';
 import * as s from './ContactForm.styled';
@@ -16,8 +17,18 @@ const ContactForm = () => {
   });
 
   const onSubmit = (data) => {
-    console.log(data);
-    reset();
+    try {
+      const { username, email, phone } = data;
+      Report.success(
+        'Successfully sent!',
+        `${username}, We will contact you shortly at the specified phone number ${phone} and send additional information by email ${email}.`,
+        'Ok'
+      );
+
+      reset();
+    } catch (error) {
+      Report.failure('Error!', 'Something went wrong, try again.', 'Ok');
+    }
   };
 
   return (

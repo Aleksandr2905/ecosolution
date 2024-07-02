@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Report } from 'notiflix/build/notiflix-report-aio';
 
 export const Forma = styled.form`
   display: flex;
@@ -163,3 +164,45 @@ export const Button = styled.button`
     background: var(--primary-color);
   }
 `;
+
+Report.init({
+  width: '320px',
+  backgroundColor: `var(--bg-color-main)`,
+  borderRadius: '25px',
+  rtl: false,
+  zindex: 4002,
+  backOverlay: true,
+  backOverlayColor: 'rgba(23, 61, 51, 0.25)',
+  backOverlayFilter: 'blur(2px)',
+  backOverlayClickToClose: false,
+  fontFamily: 'Fira Sans',
+  svgSize: '110px',
+  plainText: true,
+  titleFontSize: '20px',
+  titleMaxLength: 34,
+  messageFontSize: '16px',
+  messageMaxLength: 400,
+  buttonFontSize: '14px',
+  buttonMaxLength: 34,
+  cssAnimation: true,
+  cssAnimationDuration: 360,
+  cssAnimationStyle: 'fade',
+  success: {
+    svgColor: `var(--light-green)`,
+    titleColor: `var(--primary-color)`,
+    messageColor: `var(--primary-color)`,
+    buttonBackground: `var(--light-green)`,
+    buttonColor: `var(--primary-color)`,
+    backOverlayColor: 'rgba(23, 61, 51, 0.35)',
+    backOverlayFilter: 'blur(2px)',
+  },
+  failure: {
+    svgColor: `var(--error)`,
+    titleColor: `var(--primary-color)`,
+    messageColor: `var(--primary-color)`,
+    buttonBackground: `var(--error)`,
+    buttonColor: `var(--primary-color)`,
+    backOverlayColor: 'rgba(23, 61, 51, 0.35)',
+    backOverlayFilter: 'blur(2px)',
+  },
+});
