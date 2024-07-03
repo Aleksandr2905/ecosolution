@@ -18,17 +18,19 @@ const AboutImage = ({ image, alt }) => {
   }, [screenWidth, image]);
 
   return selectedImage ? (
-    <picture>
-      <source
-        srcSet={`${selectedImage.oneX} 1x, ${selectedImage.twoX} 2x`}
-        type="image/webp"
-      />
-      <source
-        srcSet={`${selectedImage.oneX} 1x, ${selectedImage.twoX} 2x`}
-        type="image/jpeg"
-      />
-      <img src={selectedImage.oneX} alt={alt} width="100%" height="100%" />
-    </picture>
+    <li>
+      <picture>
+        <source
+          srcSet={`${selectedImage.oneX} 1x, ${selectedImage.twoX} 2x`}
+          type="image/webp"
+        />
+        <source
+          srcSet={`${selectedImage.oneX} 1x, ${selectedImage.twoX} 2x`}
+          type="image/jpeg"
+        />
+        <img src={selectedImage.oneX} alt={alt} width="100%" height="100%" />
+      </picture>
+    </li>
   ) : null;
 };
 
