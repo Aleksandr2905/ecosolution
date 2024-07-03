@@ -29,6 +29,10 @@ html {
   scroll-behavior: smooth;
 }
 
+section {
+  scroll-margin-top: 120px;
+}
+
 /* ===================== RESET STYLE ==================== */
 
 html,
