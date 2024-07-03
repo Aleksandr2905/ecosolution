@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const Section = styled.section`
   min-width: 360px;
   max-width: 480px;
-  margin: 36px auto 0;
-  padding: 0 20px;
+  margin: -84px auto 0;
+  padding: 120px 20px 0;
 `;
 
 export const MainSection = styled(Section)`
@@ -20,8 +20,8 @@ export const Title = styled.h2`
   text-transform: uppercase;
   color: var(--primary-color);
 
-  padding-top: 120px;
-  margin-top: -120px;
+  /* padding-top: 120px;
+  margin-top: -120px; */
 `;
 
 export const MainTitle = styled(Title)`
