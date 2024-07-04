@@ -7,7 +7,7 @@ export const Wrapper = styled.a`
   align-items: center;
   gap: 12px;
   width: fit-content;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   border-radius: 500px;
   font-family: Fira Sans;
   font-size: 16px;

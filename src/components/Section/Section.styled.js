@@ -5,29 +5,14 @@ export const Section = styled.section`
   max-width: 480px;
   margin: 36px auto 0;
   padding: 0 20px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 708px;
+    margin: 100px auto 0;
+    padding: 0 30px;
+  }
 `;
 
 export const MainSection = styled(Section)`
   margin: 222px auto 0;
-`;
-
-export const Title = styled.h2`
-  margin-bottom: 24px;
-  font-family: Oswald Regular;
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 100%;
-  text-transform: uppercase;
-  color: var(--primary-color);
-
-  /* padding-top: 120px;
-  margin-top: -120px; */
-`;
-
-export const MainTitle = styled(Title)`
-  font-size: 36px;
-`;
-
-export const TitleCenter = styled(Title)`
-  text-align: center;
 `;

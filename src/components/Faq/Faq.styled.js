@@ -1,5 +1,15 @@
 import styled from 'styled-components';
 
+export const Title = styled.h2`
+  margin-bottom: 24px;
+  font-family: Oswald Regular;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: var(--primary-color);
+`;
+
 export const List = styled.ul`
   display: flex;
   flex-direction: column;
@@ -51,7 +61,10 @@ export const Answer = styled.p`
   color: var(--primary-color);
 `;
 
-export const NotAnswer = styled(Question)`
-  margin: 36px 0 12px;
-  text-align: center;
+export const ToContact = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 36px;
 `;

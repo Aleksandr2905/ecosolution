@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Logo from '../Logo/Logo';
 import Burger from './Burger/Burger';
 import * as s from './Header.styled';
+// import Button from '../Button/Button';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -26,6 +27,7 @@ const Header = () => {
       <s.Container>
         <Logo />
         <Burger />
+        {/* <Button text="Get in touch" /> */}
       </s.Container>
     </s.Wrapper>
   );

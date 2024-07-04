@@ -14,7 +14,8 @@ const Faq = () => {
   };
 
   return (
-    <Section id={id} title={title}>
+    <Section id={id}>
+      <s.Title>{title}</s.Title>
       <s.List>
         {listFaq.map((item, index) => (
           <s.Item key={item.id} onClick={() => toggleFaq(index)}>
@@ -32,8 +33,10 @@ const Faq = () => {
           </s.Item>
         ))}
       </s.List>
-      <s.NotAnswer>{notAnswer}</s.NotAnswer>
-      <Button text={button} />
+      <s.ToContact>
+        <s.Question>{notAnswer}</s.Question>
+        <Button text={button} />
+      </s.ToContact>
     </Section>
   );
 };

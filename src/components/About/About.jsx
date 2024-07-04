@@ -8,7 +8,8 @@ const About = () => {
   const { id, title, description, values } = text;
 
   return (
-    <Section id={id} title={title}>
+    <Section id={id}>
+      <s.Title>{title}</s.Title>
       <s.SubTitle>{description}</s.SubTitle>
       <s.List>
         <AboutCard
@@ -22,6 +23,7 @@ const About = () => {
           text={values[1].text}
         />
         <AboutImage image="imageOne" alt="wind farms fields" />
+        <AboutImage image="imageTwo" alt="man worker field by solar panels" />
         <AboutCard
           icon={values[2].icon}
           value={values[2].value}
@@ -32,7 +34,6 @@ const About = () => {
           value={values[3].value}
           text={values[3].text}
         />
-        <AboutImage image="imageTwo" alt="man worker field by solar panels" />
       </s.List>
     </Section>
   );

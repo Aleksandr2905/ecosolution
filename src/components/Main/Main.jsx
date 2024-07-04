@@ -17,12 +17,8 @@ const Main = () => {
   }, [screenWidth]);
 
   return (
-    <Section
-      id={id}
-      title={title}
-      sectionStyle="MainSection"
-      titleStyle="MainTitle"
-    >
+    <Section id={id} sectionStyle="MainSection">
+      <s.Title>{title}</s.Title>
       <s.SubTitle>{description}</s.SubTitle>
       <s.Button href="#cases">
         Learn more
