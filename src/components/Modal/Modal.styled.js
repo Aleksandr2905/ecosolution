@@ -22,13 +22,18 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: flex-start;
   margin: auto;
-  width: 100%;
-  max-width: 440px;
+  /* width: 100%; */
+  width: 440px;
   height: 100%;
   padding: 24px;
   border-radius: 25px;
   background: rgba(23, 61, 51, 0.75);
   backdrop-filter: blur(12.5px);
+
+  @media screen and (min-width: 768px) {
+    width: 320px;
+    margin: 0 0 0 auto;
+  }
 `;
 
 export const CloseBtn = styled.button`
