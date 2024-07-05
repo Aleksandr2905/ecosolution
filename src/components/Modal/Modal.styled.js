@@ -22,7 +22,6 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: flex-start;
   margin: auto;
-  /* width: 100%; */
   width: 440px;
   height: 100%;
   padding: 24px;
