@@ -20,7 +20,11 @@ export const Container = styled.div`
 
   @media screen and (min-width: 768px) {
     max-width: 708px;
-
     padding: 36px 30px;
   }
+`;
+
+export const BtnBlock = styled.div`
+  display: flex;
+  gap: 12px;
 `;

@@ -1,10 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.li`
-  /* display: flex; */
-  /* flex-direction: column; */
   padding: 12px;
-  /* width: 148px; */
   height: 197px;
   background-color: var(--bg-slider-card);
 `;

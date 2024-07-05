@@ -9,8 +9,10 @@ const About = () => {
 
   return (
     <Section id={id}>
-      <s.Title>{title}</s.Title>
-      <s.SubTitle>{description}</s.SubTitle>
+      <s.TitleBlock>
+        <s.Title>{title}</s.Title>
+        <s.SubTitle>{description}</s.SubTitle>
+      </s.TitleBlock>
       <s.List>
         <AboutCard
           icon={values[0].icon}

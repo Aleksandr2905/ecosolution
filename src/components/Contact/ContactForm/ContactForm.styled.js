@@ -14,6 +14,11 @@ export const Forma = styled.form`
   & > *:nth-last-child(2) {
     margin-bottom: 16px;
   }
+
+  @media screen and (min-width: 768px) {
+    padding: 36px 24px;
+    width: 342px;
+  }
 `;
 
 export const Label = styled.label`

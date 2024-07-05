@@ -8,11 +8,11 @@ const Footer = () => {
   const { email, address } = text.info;
   return (
     <s.Wrapper>
+      <ButtonToTop />
       <s.Title>
         <Logo />
-        <ButtonToTop />
+        <Social style="ForFooter" />
       </s.Title>
-      <Social />
       <s.ContactBlock>
         <s.Address>{address}</s.Address>
         <s.Email href={`mailto:${email}`}>{email}</s.Email>

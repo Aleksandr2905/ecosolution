@@ -6,6 +6,10 @@ export const Wrapper = styled.ul`
   gap: 24px;
   width: 244px;
   margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 `;
 
 export const Label = styled.p`

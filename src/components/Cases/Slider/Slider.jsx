@@ -9,7 +9,7 @@ import { slidesImage } from '../../../data/cases';
 import sprite from '../../../assets/icons/sprite.svg';
 import * as s from './Slider.styled';
 
-const Slider = () => {
+const Slider = ({ title }) => {
   const refSlider = useRef(null);
   const tablet = useMediaQuery({ minWidth: 768 });
   const [activeIndex, setActiveIndex] = useState(0);
@@ -30,29 +30,36 @@ const Slider = () => {
   };
 
   return (
-    <div>
-      <s.Wrapper>
-        <s.Counter>
-          {formatNumber(activeIndex + 1)}
-          <span>/{formatNumber(slidesImage.length)}</span>
-        </s.Counter>
-        <s.Buttons>
-          <s.BtnPrev
-            type="button"
-            onClick={handlePrev}
-            aria-label="Previous Slide"
-          >
-            <svg width="36" height="36">
-              <use href={`${sprite}#arrow-right`} />
-            </svg>
-          </s.BtnPrev>
-          <s.BtnNext type="button" onClick={handleNext} aria-label="Next Slide">
-            <svg width="36" height="36">
-              <use href={`${sprite}#arrow-right`} />
-            </svg>
-          </s.BtnNext>
-        </s.Buttons>
-      </s.Wrapper>
+    <>
+      <s.TitleBlock>
+        <s.Title>{title}</s.Title>
+        <s.Wrapper>
+          <s.Counter>
+            {formatNumber(activeIndex + 1)}
+            <span>/{formatNumber(slidesImage.length)}</span>
+          </s.Counter>
+          <s.Buttons>
+            <s.BtnPrev
+              type="button"
+              onClick={handlePrev}
+              aria-label="Previous Slide"
+            >
+              <svg width="36" height="36">
+                <use href={`${sprite}#arrow-right`} />
+              </svg>
+            </s.BtnPrev>
+            <s.BtnNext
+              type="button"
+              onClick={handleNext}
+              aria-label="Next Slide"
+            >
+              <svg width="36" height="36">
+                <use href={`${sprite}#arrow-right`} />
+              </svg>
+            </s.BtnNext>
+          </s.Buttons>
+        </s.Wrapper>
+      </s.TitleBlock>
       <Swiper
         ref={refSlider}
         modules={[Navigation]}
@@ -67,7 +74,7 @@ const Slider = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </>
   );
 };
 

@@ -17,14 +17,18 @@ const Card = ({ slide }) => {
         />
       </picture>
       <s.Info>
-        <s.Title>{title}</s.Title>
-        <s.Button href="/" aria-label="button">
-          <svg width="28" height="28">
-            <use href={`${sprite}#arrow-right`} />
-          </svg>
-        </s.Button>
-        <s.SubTitle>{subTitle}</s.SubTitle>
-        <s.Date>{date}</s.Date>
+        <s.TitleBlock>
+          <s.Title>{title}</s.Title>
+          <s.Button href="/" aria-label="button">
+            <svg width="28" height="28">
+              <use href={`${sprite}#arrow-right`} />
+            </svg>
+          </s.Button>
+        </s.TitleBlock>
+        <s.SubTitleBlock>
+          <s.SubTitle>{subTitle}</s.SubTitle>
+          <s.Date>{date}</s.Date>
+        </s.SubTitleBlock>
       </s.Info>
     </s.Wrapper>
   );

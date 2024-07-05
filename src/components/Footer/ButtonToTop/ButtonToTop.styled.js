@@ -1,9 +1,17 @@
 import styled from 'styled-components';
 
 export const ScrollButton = styled.button`
+  position: absolute;
+  top: 28px;
+  right: 20px;
   padding: 0;
   border: none;
   background: transparent;
+
+  @media screen and (min-width: 768px) {
+    top: 40px;
+    right: 30px;
+  }
 
   svg {
     width: 32px;

@@ -10,8 +10,10 @@ const Contact = () => {
   return (
     <Section id={id}>
       <s.Title>{title}</s.Title>
-      <ContactBlock />
-      <ContactForm />
+      <s.Wrapper>
+        <ContactBlock />
+        <ContactForm />
+      </s.Wrapper>
     </Section>
   );
 };

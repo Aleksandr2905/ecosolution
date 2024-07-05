@@ -4,6 +4,7 @@ import {
   aboutImageTwoAdaptive,
 } from '../../../data/about';
 import { useScreenWidth } from '../../../hooks/useScreenWidth';
+import * as s from './AboutImage.styled';
 
 const AboutImage = ({ image, alt }) => {
   const screenWidth = useScreenWidth();
@@ -28,7 +29,12 @@ const AboutImage = ({ image, alt }) => {
           srcSet={`${selectedImage.oneX} 1x, ${selectedImage.twoX} 2x`}
           type="image/jpeg"
         />
-        <img src={selectedImage.oneX} alt={alt} width="100%" height="100%" />
+        <s.Image
+          src={selectedImage.oneX}
+          alt={alt}
+          width="100%"
+          height="100%"
+        />
       </picture>
     </li>
   ) : null;

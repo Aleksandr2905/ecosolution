@@ -1,5 +1,16 @@
 import styled from 'styled-components';
 
+export const Wrapper = styled.div`
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row-reverse;
+    /* gap: 24px; */
+    position: relative;
+  }
+`;
+
 export const Title = styled.h2`
   margin-bottom: 24px;
   font-family: Oswald Regular;
@@ -8,6 +19,11 @@ export const Title = styled.h2`
   line-height: 100%;
   text-transform: uppercase;
   color: var(--primary-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    margin-left: 24px;
+  }
 `;
 
 export const List = styled.ul`
@@ -23,6 +39,10 @@ export const Item = styled.li`
   padding-top: 16px;
   cursor: pointer;
   border-top: 1px solid var(--light-green);
+
+  @media screen and (min-width: 768px) {
+    width: 342px;
+  }
 `;
 
 export const Icon = styled.div`
@@ -67,4 +87,10 @@ export const ToContact = styled.div`
   align-items: center;
   gap: 12px;
   margin-top: 36px;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    right: 44px;
+    bottom: 0;
+  }
 `;

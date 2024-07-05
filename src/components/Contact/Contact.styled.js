@@ -9,4 +9,18 @@ export const Title = styled.h2`
   line-height: 100%;
   text-transform: uppercase;
   color: var(--primary-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+`;
+
+export const Wrapper = styled.div`
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
 `;

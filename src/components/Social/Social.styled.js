@@ -4,6 +4,11 @@ export const Wrapper = styled.div`
   display: flex;
   gap: 8px;
 
+  a {
+    display: flex;
+    align-items: center;
+  }
+
   svg {
     transition: var(--transition);
     fill: var(--primary-color);
@@ -26,5 +31,13 @@ export const NavMenu = styled(Wrapper)`
   svg {
     fill: var(--white);
     stroke: var(--white);
+  }
+`;
+
+export const ForFooter = styled(Wrapper)`
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
   }
 `;

@@ -1,5 +1,16 @@
 import styled from 'styled-components';
 
+export const TitleBlock = styled.div`
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+`;
+
 export const Title = styled.h1`
   margin-bottom: 24px;
   font-family: Oswald Regular;
@@ -8,6 +19,23 @@ export const Title = styled.h1`
   line-height: 100%;
   text-transform: uppercase;
   color: var(--primary-color);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    font-size: 48px;
+    width: 301px;
+    height: 144px;
+  }
+`;
+
+export const SubTitleBlock = styled.div`
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    width: 342px;
+  }
 `;
 
 export const SubTitle = styled.p`
@@ -17,6 +45,11 @@ export const SubTitle = styled.p`
   font-weight: 400;
   line-height: normal;
   color: var(--primary-color);
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+    letter-spacing: -0.64px;
+  }
 `;
 
 export const Button = styled.a`
@@ -56,6 +89,10 @@ export const Button = styled.a`
     border: 1px solid var(--primary-color);
     background: var(--primary-color);
   }
+
+  @media screen and (min-width: 768px) {
+    margin: 43px 0 0;
+  }
 `;
 
 export const ContactBlock = styled.div`
@@ -64,11 +101,17 @@ export const ContactBlock = styled.div`
   gap: 8px;
   padding: 24px 0 36px;
   border-top: 1px solid var(--light-green);
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 77px;
+    padding: 16px 0 40px;
+  }
 `;
 
 export const Email = styled.a`
   text-align: center;
-  font-family: 'Fira Sans';
+  font-family: Fira Sans;
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
@@ -78,7 +121,22 @@ export const Email = styled.a`
 
 export const Address = styled.address`
   text-align: center;
-  font-family: 'Fira Sans';
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  color: var(--primary-color);
+`;
+
+export const BlockCopyright = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+export const Copyright = styled.p`
+  margin-left: 50px;
+  font-family: Fira Sans;
   font-size: 16px;
   font-weight: 400;
   line-height: normal;

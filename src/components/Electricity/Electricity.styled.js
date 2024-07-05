@@ -9,4 +9,10 @@ export const Title = styled.h2`
   line-height: 100%;
   text-transform: uppercase;
   color: var(--primary-color);
+
+  @media screen and (min-width: 768px) {
+    margin: 0 auto 24px;
+    width: 368px;
+    font-size: 36px;
+  }
 `;

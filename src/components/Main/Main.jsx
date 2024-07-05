@@ -18,17 +18,26 @@ const Main = () => {
 
   return (
     <Section id={id} sectionStyle="MainSection">
-      <s.Title>{title}</s.Title>
-      <s.SubTitle>{description}</s.SubTitle>
-      <s.Button href="#cases">
-        Learn more
-        <svg width="16" height="16">
-          <use href={`${sprite}#arrow-right`} />
-        </svg>
-      </s.Button>
+      <s.TitleBlock>
+        <s.Title>{title}</s.Title>
+        <s.SubTitleBlock>
+          <s.SubTitle>{description}</s.SubTitle>
+          <s.Button href="#cases">
+            Learn more
+            <svg width="16" height="16">
+              <use href={`${sprite}#arrow-right`} />
+            </svg>
+          </s.Button>
+        </s.SubTitleBlock>
+      </s.TitleBlock>
       <s.ContactBlock>
         <s.Address>{address}</s.Address>
-        <s.Email href={`mailto:${email}`}>{email}</s.Email>
+        <s.BlockCopyright>
+          <s.Email href={`mailto:${email}`}>{email}</s.Email>
+          {screenWidth === 'mobile' || (
+            <s.Copyright>ecosolution © 2023</s.Copyright>
+          )}
+        </s.BlockCopyright>
       </s.ContactBlock>
       <picture>
         <source
