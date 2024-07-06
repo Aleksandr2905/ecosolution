@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
@@ -77,6 +78,10 @@ const Slider = ({ title }) => {
       </Swiper>
     </>
   );
+};
+
+Slider.propTypes = {
+  title: PropTypes.string.isRequired,
 };
 
 export default Slider;

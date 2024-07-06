@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import {
   aboutImageOneAdaptive,
@@ -39,6 +40,11 @@ const AboutImage = ({ image, alt }) => {
       </picture>
     </li>
   ) : null;
+};
+
+AboutImage.propTypes = {
+  image: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
 };
 
 export default AboutImage;

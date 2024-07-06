@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import sprite from '../../../assets/icons/sprite.svg';
 import * as s from './Card.styled';
 
@@ -32,6 +33,23 @@ const Card = ({ slide }) => {
       </s.Info>
     </s.Wrapper>
   );
+};
+
+Card.propTypes = {
+  slide: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    webp: PropTypes.shape({
+      oneX: PropTypes.string.isRequired,
+      twoX: PropTypes.string.isRequired,
+    }).isRequired,
+    jpg: PropTypes.shape({
+      oneX: PropTypes.string.isRequired,
+      twoX: PropTypes.string.isRequired,
+    }).isRequired,
+    title: PropTypes.string.isRequired,
+    subTitle: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default Card;

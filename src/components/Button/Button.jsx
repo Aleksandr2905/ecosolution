@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import sprite from '../../assets/icons/sprite.svg';
 import * as s from './Button.styled';
 
@@ -10,6 +11,10 @@ const Button = ({ text }) => {
       </svg>
     </s.Wrapper>
   );
+};
+
+Button.propTypes = {
+  text: PropTypes.string.isRequired,
 };
 
 export default Button;

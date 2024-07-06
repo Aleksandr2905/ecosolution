@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import sprite from '../../../assets/icons/sprite.svg';
 import { navigation } from '../../../data/navigation';
 import Social from '../../Social/Social';
@@ -28,6 +29,11 @@ const NavMenu = ({ handleClose, activeSection }) => {
       <Social style="NavMenu" />
     </s.Wrapper>
   );
+};
+
+NavMenu.propTypes = {
+  handleClose: PropTypes.func.isRequired,
+  activeSection: PropTypes.string.isRequired,
 };
 
 export default NavMenu;
