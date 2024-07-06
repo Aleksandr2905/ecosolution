@@ -37,6 +37,7 @@ export const Link = styled.a`
   align-items: center;
   gap: 8px;
   text-align: justify;
+  width: fit-content;
   font-family: Fira Sans;
   font-size: 20px;
   font-weight: 400;

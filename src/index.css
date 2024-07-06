@@ -33,6 +33,10 @@ section {
   scroll-margin-top: 120px;
 }
 
+*:focus {
+  outline: 2px solid var(--light-green);
+}
+
 /* ===================== RESET STYLE ==================== */
 
 html,

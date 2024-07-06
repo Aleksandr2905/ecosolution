@@ -34,6 +34,7 @@ const AboutImage = ({ image, alt }) => {
           alt={alt}
           width="100%"
           height="100%"
+          loading="lazy"
         />
       </picture>
     </li>

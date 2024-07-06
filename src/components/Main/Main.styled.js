@@ -137,7 +137,12 @@ export const Email = styled.a`
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.64px;
+  transition: var(--transition);
   color: var(--primary-color);
+
+  &:hover {
+    color: var(--light-green);
+  }
 `;
 
 export const Address = styled.address`
