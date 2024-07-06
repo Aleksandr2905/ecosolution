@@ -55,15 +55,17 @@ const Modal = ({ show, handleClose, children }) => {
   return createPortal(
     show && (
       <s.Backdrop onClick={handleBackdrop}>
-        <s.Container ref={modalRef} onClick={(e) => e.stopPropagation()}>
-          <s.CloseBtn onClick={handleClose} type="button" aria-label="Close">
-            <svg width={20} height={20}>
-              <use href={`${sprite}#close`} />
-            </svg>
-            close
-          </s.CloseBtn>
-          {children}
-        </s.Container>
+        <s.Wrapper>
+          <s.Container ref={modalRef} onClick={(e) => e.stopPropagation()}>
+            <s.CloseBtn onClick={handleClose} type="button" aria-label="Close">
+              <svg width={20} height={20}>
+                <use href={`${sprite}#close`} />
+              </svg>
+              close
+            </s.CloseBtn>
+            {children}
+          </s.Container>
+        </s.Wrapper>
       </s.Backdrop>
     ),
     modal

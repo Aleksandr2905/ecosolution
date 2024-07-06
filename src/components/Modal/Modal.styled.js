@@ -4,7 +4,7 @@ export const Backdrop = styled.div`
   display: flex;
   position: fixed;
   flex-direction: column;
-  padding: 36px 20px;
+  /* padding: 36px 20px; */
   gap: 16px;
   width: 100vw;
   height: 100vh;
@@ -16,12 +16,30 @@ export const Backdrop = styled.div`
   backdrop-filter: blur(2px);
   background-color: rgba(23, 61, 51, 0.25);
 
-  @media screen and (min-width: 768px) {
+  /* @media screen and (min-width: 768px) {
     padding: 36px 30px;
   }
 
   @media screen and (min-width: 1280px) {
     padding: 24px 20px;
+  } */
+`;
+
+export const Wrapper = styled.div`
+  padding: 36px 20px;
+  width: 100%;
+  height: 100%;
+
+  @media screen and (min-width: 768px) {
+    padding: 36px 30px;
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 24px 20px;
+    width: 1280px;
+    margin: 0 auto;
   }
 `;
 
