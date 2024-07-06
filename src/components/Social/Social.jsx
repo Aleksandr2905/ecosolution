@@ -10,7 +10,7 @@ const Social = ({ style }) => {
         <a
           key={icon}
           href={link}
-          aria-label={label}
+          aria-label={`link ${label}`}
           target="_blank"
           rel="noopener noreferrer"
         >

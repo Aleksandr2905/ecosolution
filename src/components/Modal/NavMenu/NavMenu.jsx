@@ -14,6 +14,7 @@ const NavMenu = ({ handleClose, activeSection }) => {
                 href={`#${href}`}
                 onClick={handleClose}
                 className={activeSection === href ? 'active' : ''}
+                aria-label={`link to ${href}`}
               >
                 {name}
                 <svg width="16" height="16">

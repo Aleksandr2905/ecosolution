@@ -3,7 +3,7 @@ import * as s from './Button.styled';
 
 const Button = ({ text }) => {
   return (
-    <s.Wrapper href="#contact">
+    <s.Wrapper href="#contact" aria-label="link to contact">
       {text}
       <svg width="14" height="14">
         <use href={`${sprite}#arrow-right`} />

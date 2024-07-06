@@ -9,13 +9,19 @@ const ContactBlock = () => {
     <s.Wrapper>
       <li>
         <s.Label>Phone:</s.Label>
-        <s.Link href={`tel:+${tel1.replace(/\s|\(|\)/g, '')}`}>
+        <s.Link
+          href={`tel:+${tel1.replace(/\s|\(|\)/g, '')}`}
+          aria-label="link to call"
+        >
           <svg width="24" height="24">
             <use href={`${sprite}#phone`} />
           </svg>
           {tel1}
         </s.Link>
-        <s.SecondPhone href={`tel:+${tel2.replace(/\s|\(|\)/g, '')}`}>
+        <s.SecondPhone
+          href={`tel:+${tel2.replace(/\s|\(|\)/g, '')}`}
+          aria-label="link to call"
+        >
           <svg width="24" height="24">
             <use href={`${sprite}#phone`} />
           </svg>
@@ -24,7 +30,7 @@ const ContactBlock = () => {
       </li>
       <li>
         <s.Label>E-mail:</s.Label>
-        <s.Link href={`mailto:${email}`}>
+        <s.Link href={`mailto:${email}`} aria-label="link to email">
           <svg width="24" height="24">
             <use href={`${sprite}#email`} />
           </svg>
@@ -37,6 +43,7 @@ const ContactBlock = () => {
           href={`https://www.google.com/maps/?q=${address}`}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="link to map"
         >
           <svg width="40" height="40">
             <use href={`${sprite}#map`} />

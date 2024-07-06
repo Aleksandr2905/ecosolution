@@ -15,7 +15,9 @@ const Footer = () => {
       </s.Title>
       <s.ContactBlock>
         <s.Address>{address}</s.Address>
-        <s.Email href={`mailto:${email}`}>{email}</s.Email>
+        <s.Email href={`mailto:${email}`} aria-label="link to email">
+          {email}
+        </s.Email>
         <s.Copyright>ecosolution © 2023</s.Copyright>
       </s.ContactBlock>
     </s.Wrapper>

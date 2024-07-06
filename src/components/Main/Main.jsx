@@ -22,7 +22,7 @@ const Main = () => {
         <s.Title>{title}</s.Title>
         <s.SubTitleBlock>
           <s.SubTitle>{description}</s.SubTitle>
-          <s.Button href="#cases">
+          <s.Button href="#cases" aria-label="link to cases">
             Learn more
             <svg width="16" height="16">
               <use href={`${sprite}#arrow-right`} />
@@ -33,7 +33,9 @@ const Main = () => {
       <s.ContactBlock>
         <s.Address>{address}</s.Address>
         <s.BlockCopyright>
-          <s.Email href={`mailto:${email}`}>{email}</s.Email>
+          <s.Email href={`mailto:${email}`} aria-label="link to email">
+            {email}
+          </s.Email>
           {screenWidth === 'mobile' || (
             <s.Copyright>ecosolution © 2023</s.Copyright>
           )}
