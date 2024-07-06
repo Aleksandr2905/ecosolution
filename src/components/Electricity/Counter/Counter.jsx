@@ -8,11 +8,11 @@ const Counter = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCount((prevCount) => prevCount + 1);
+      setCount(count + 1);
     }, 1000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [count]);
 
   const formattedCount = count.toLocaleString('de-DE');
 
