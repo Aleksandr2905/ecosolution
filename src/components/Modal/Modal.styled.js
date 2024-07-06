@@ -30,7 +30,8 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: flex-start;
   margin: auto;
-  width: 440px;
+  width: 100%;
+  max-width: 440px;
   height: 100%;
   padding: 24px;
   border-radius: 25px;
