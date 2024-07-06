@@ -183,9 +183,7 @@ a {
   font-family: 'Fontspring';
   src: local('Fontspring DEMO allroundgothic thick'),
     local('Fontspring-DEMO-allroundgothic-thick'),
-    /* url('./assets/fonts/Fontspring/Fontspring-DEMO-allroundgothic-thick.woff2')
-      format('woff2'), */
-      url('./assets/fonts/Fontspring/Fontspring-DEMO-allroundgothic-thick.woff')
+    url('./assets/fonts/Fontspring/Fontspring-DEMO-allroundgothic-thick.woff')
       format('woff'),
     url('./assets/fonts/Fontspring/Fontspring-DEMO-allroundgothic-thick.ttf')
       format('truetype');

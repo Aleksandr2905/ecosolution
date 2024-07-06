@@ -78,7 +78,6 @@ const ContactForm = () => {
           {...register('message')}
           $errors={!!errors.message}
         />
-        {/* <s.ErrorText>{errors.message?.message}</s.ErrorText> */}
       </s.Textarea>
       <s.Button type="submit">
         Send

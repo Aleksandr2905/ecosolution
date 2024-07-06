@@ -19,8 +19,4 @@ export const BurgerButton = styled.button`
   &:hover {
     background-color: var(--light-green);
   }
-
-  /* &:focus {
-    outline: 1px solid var(--main-typography);
-  } */
 `;

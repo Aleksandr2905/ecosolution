@@ -45,7 +45,6 @@ export const Label = styled.label`
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.64px;
-  /* position: relative; */
   color: var(--primary-color);
 
   @media screen and (min-width: 1280px) {
@@ -184,9 +183,6 @@ export const Message = styled.textarea`
 `;
 
 export const ErrorText = styled.p`
-  /* position: absolute; */
-  /* right: 0; */
-  /* bottom: -24px; */
   text-align: right;
   font-family: Fira Sans;
   font-size: 12px;

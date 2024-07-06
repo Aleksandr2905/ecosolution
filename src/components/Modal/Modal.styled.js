@@ -4,7 +4,6 @@ export const Backdrop = styled.div`
   display: flex;
   position: fixed;
   flex-direction: column;
-  /* padding: 36px 20px; */
   gap: 16px;
   width: 100vw;
   height: 100vh;
@@ -15,14 +14,6 @@ export const Backdrop = styled.div`
   z-index: 100;
   backdrop-filter: blur(2px);
   background-color: rgba(23, 61, 51, 0.25);
-
-  /* @media screen and (min-width: 768px) {
-    padding: 36px 30px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    padding: 24px 20px;
-  } */
 `;
 
 export const Wrapper = styled.div`
