@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { Report } from 'notiflix/build/notiflix-report-aio';
@@ -11,10 +12,24 @@ const ContactForm = () => {
     handleSubmit,
     formState: { errors },
     reset,
+    watch,
   } = useForm({
     resolver: yupResolver(schema),
     mode: 'onChange',
   });
+
+  useEffect(() => {
+    const storageData = localStorage.getItem('formData');
+    if (storageData) {
+      const parsedData = JSON.parse(storageData);
+      reset(parsedData);
+    }
+  }, [reset]);
+
+  const data = watch();
+  useEffect(() => {
+    localStorage.setItem('formData', JSON.stringify(data));
+  }, [data]);
 
   const onSubmit = (data) => {
     try {
@@ -26,6 +41,7 @@ const ContactForm = () => {
       );
 
       reset();
+      localStorage.removeItem('formData');
     } catch (error) {
       Report.failure('Error!', 'Something went wrong, try again.', 'Ok');
     }
