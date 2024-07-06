@@ -8,16 +8,29 @@ export const Forma = styled.form`
   background: var(--bg-slider-card);
 
   & > *:not(:last-child) {
-    margin-bottom: 28px;
+    margin-bottom: 6px;
   }
 
   & > *:nth-last-child(2) {
-    margin-bottom: 16px;
+    margin-bottom: 10px;
   }
 
   @media screen and (min-width: 768px) {
     padding: 36px 24px;
     width: 342px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 48px;
+    width: 596px;
+
+    & > *:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    & > *:nth-last-child(2) {
+      margin-bottom: 32px;
+    }
   }
 `;
 
@@ -26,13 +39,19 @@ export const Label = styled.label`
   flex-direction: column;
   gap: 8px;
   text-align: justify;
+  height: 80px;
   font-family: Fira Sans;
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.64px;
-  position: relative;
+  /* position: relative; */
   color: var(--primary-color);
+
+  @media screen and (min-width: 1280px) {
+    gap: 12px;
+    height: 90px;
+  }
 `;
 
 export const Input = styled.input`
@@ -75,6 +94,36 @@ export const Input = styled.input`
     outline: none;
     border-bottom: 1px solid
       ${(props) => (props.$errors ? 'var(--error)' : 'var(--primary-color)')};
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    letter-spacing: -0.8px;
+
+    &::placeholder {
+      font-size: 20px;
+      letter-spacing: -0.8px;
+    }
+  }
+`;
+
+export const Textarea = styled.label`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: justify;
+  height: 174px;
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  position: relative;
+  color: var(--primary-color);
+
+  @media screen and (min-width: 1280px) {
+    gap: 12px;
+    height: 180px;
   }
 `;
 
@@ -121,12 +170,29 @@ export const Message = styled.textarea`
     border-bottom: 1px solid
       ${(props) => (props.$errors ? 'var(--error)' : 'var(--primary-color)')};
   }
+
+  @media screen and (min-width: 1280px) {
+    height: 149px;
+    font-size: 20px;
+    letter-spacing: -0.8px;
+
+    &::placeholder {
+      font-size: 20px;
+      letter-spacing: -0.8px;
+    }
+  }
 `;
 
 export const ErrorText = styled.p`
-  position: absolute;
-  right: 0;
-  bottom: -24px;
+  /* position: absolute; */
+  /* right: 0; */
+  /* bottom: -24px; */
+  text-align: right;
+  font-family: Fira Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
   color: var(--error);
 `;
 

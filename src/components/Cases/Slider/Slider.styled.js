@@ -8,6 +8,10 @@ export const TitleBlock = styled.div`
     justify-content: space-between;
     margin-bottom: 32px;
   }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 120px;
+  }
 `;
 
 export const Title = styled.h2`
@@ -24,6 +28,11 @@ export const Title = styled.h2`
     font-size: 36px;
     margin-bottom: 0;
   }
+
+  @media screen and (min-width: 1280px) {
+    width: 365px;
+    font-size: 48px;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -37,6 +46,11 @@ export const Wrapper = styled.div`
     margin-bottom: 0;
     padding-left: 9px;
     border-left: 1px solid var(--light-green);
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 620px;
+    padding-left: 160px;
   }
 `;
 
@@ -61,11 +75,15 @@ export const Buttons = styled.div`
   display: flex;
   gap: 12px;
   margin-bottom: 7px;
+
+  @media screen and (min-width: 1280px) {
+    gap: 24px;
+  }
 `;
 
 export const BtnNext = styled.button`
   display: inline-flex;
-  padding: 15px;
+  padding: 14px;
   align-items: flex-start;
   gap: 10px;
   background-color: transparent;
@@ -87,6 +105,10 @@ export const BtnNext = styled.button`
     svg {
       stroke: var(--light-green);
     }
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 23px;
   }
 `;
 

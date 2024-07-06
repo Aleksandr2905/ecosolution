@@ -15,6 +15,14 @@ export const Backdrop = styled.div`
   z-index: 100;
   backdrop-filter: blur(2px);
   background-color: rgba(23, 61, 51, 0.25);
+
+  @media screen and (min-width: 768px) {
+    padding: 36px 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 24px 20px;
+  }
 `;
 
 export const Container = styled.div`
@@ -31,6 +39,11 @@ export const Container = styled.div`
 
   @media screen and (min-width: 768px) {
     width: 320px;
+    margin: 0 0 0 auto;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 365px;
     margin: 0 0 0 auto;
   }
 `;
@@ -64,5 +77,10 @@ export const CloseBtn = styled.button`
       stroke: var(--light-green);
       transform: rotate(90deg);
     }
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    padding: 0 0 4px;
   }
 `;

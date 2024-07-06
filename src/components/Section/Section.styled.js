@@ -11,6 +11,12 @@ export const Section = styled.section`
     margin: 100px auto 0;
     padding: 0 30px;
   }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    margin: 120px auto 0;
+    padding: 0 20px;
+  }
 `;
 
 export const MainSection = styled(Section)`
@@ -18,5 +24,9 @@ export const MainSection = styled(Section)`
 
   @media screen and (min-width: 768px) {
     margin: 240px auto 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin: 264px auto 0;
   }
 `;

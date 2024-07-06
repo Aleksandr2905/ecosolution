@@ -7,10 +7,15 @@ export const ScrollButton = styled.button`
   padding: 0;
   border: none;
   background: transparent;
+  z-index: 10;
 
   @media screen and (min-width: 768px) {
     top: 40px;
     right: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    right: 20px;
   }
 
   svg {

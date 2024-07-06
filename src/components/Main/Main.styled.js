@@ -26,6 +26,12 @@ export const Title = styled.h1`
     width: 301px;
     height: 144px;
   }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 64px;
+    width: 485px;
+    height: auto;
+  }
 `;
 
 export const SubTitleBlock = styled.div`
@@ -35,6 +41,11 @@ export const SubTitleBlock = styled.div`
     display: flex;
     flex-direction: column;
     width: 342px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 363px;
+    margin-right: 96px;
   }
 `;
 
@@ -93,6 +104,10 @@ export const Button = styled.a`
   @media screen and (min-width: 768px) {
     margin: 43px 0 0;
   }
+
+  @media screen and (min-width: 1280px) {
+    margin: 20px 0 0;
+  }
 `;
 
 export const ContactBlock = styled.div`
@@ -106,6 +121,12 @@ export const ContactBlock = styled.div`
     flex-direction: row;
     gap: 77px;
     padding: 16px 0 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 0;
+    justify-content: space-between;
+    padding: 12px 0 36px;
   }
 `;
 
@@ -132,6 +153,11 @@ export const Address = styled.address`
 export const BlockCopyright = styled.div`
   display: flex;
   justify-content: center;
+
+  @media screen and (min-width: 1280px) {
+    justify-content: space-between;
+    width: 460px;
+  }
 `;
 
 export const Copyright = styled.p`

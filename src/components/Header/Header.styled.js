@@ -22,6 +22,11 @@ export const Container = styled.div`
     max-width: 708px;
     padding: 36px 0;
   }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1240px;
+    padding: 24px 0;
+  }
 `;
 
 export const BtnBlock = styled.div`

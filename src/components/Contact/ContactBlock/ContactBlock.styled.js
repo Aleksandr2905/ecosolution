@@ -10,6 +10,11 @@ export const Wrapper = styled.ul`
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
+
+  @media screen and (min-width: 1280px) {
+    gap: 32px;
+    width: 466px;
+  }
 `;
 
 export const Label = styled.p`
@@ -21,6 +26,10 @@ export const Label = styled.p`
   line-height: normal;
   letter-spacing: -0.64px;
   color: var(--primary-color);
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 16px;
+  }
 `;
 
 export const Link = styled.a`
@@ -45,6 +54,19 @@ export const Link = styled.a`
   &:hover {
     svg {
       stroke: var(--light-green);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    letter-spacing: -0.96px;
+
+    & svg {
+      width: 24px;
+      height: 24px;
+      fill: transparent;
+      transition: var(--transition);
+      stroke: var(--primary-color);
     }
   }
 `;

@@ -60,7 +60,7 @@ const Modal = ({ show, handleClose, children }) => {
             <svg width={20} height={20}>
               <use href={`${sprite}#close`} />
             </svg>
-            Close
+            close
           </s.CloseBtn>
           {children}
         </s.Container>

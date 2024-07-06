@@ -12,6 +12,7 @@ import * as s from './Slider.styled';
 const Slider = ({ title }) => {
   const refSlider = useRef(null);
   const tablet = useMediaQuery({ minWidth: 768 });
+  const desktop = useMediaQuery({ minWidth: 1280 });
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handlePrev = () => {
@@ -63,7 +64,7 @@ const Slider = ({ title }) => {
       <Swiper
         ref={refSlider}
         modules={[Navigation]}
-        spaceBetween={24}
+        spaceBetween={desktop ? 48 : 24}
         slidesPerView={tablet ? 2 : 1}
         onSlideChange={handleSlideChange}
         loop={true}

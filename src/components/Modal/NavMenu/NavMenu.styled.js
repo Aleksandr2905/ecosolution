@@ -12,6 +12,10 @@ export const NavList = styled.ul`
   flex-direction: column;
   gap: 8px;
   margin-top: 24px;
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 16px;
+  }
 `;
 
 export const NavItem = styled.a`

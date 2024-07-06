@@ -9,6 +9,10 @@ export const Wrapper = styled.div`
     /* gap: 24px; */
     position: relative;
   }
+
+  @media screen and (min-width: 1280px) {
+    justify-content: flex-end;
+  }
 `;
 
 export const Title = styled.h2`
@@ -24,12 +28,22 @@ export const Title = styled.h2`
     font-size: 36px;
     margin-left: 24px;
   }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 48px;
+    margin-left: 185px;
+    width: 398px;
+  }
 `;
 
 export const List = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  @media screen and (min-width: 1280px) {
+    gap: 24px;
+  }
 `;
 
 export const Item = styled.li`
@@ -43,6 +57,12 @@ export const Item = styled.li`
   @media screen and (min-width: 768px) {
     width: 342px;
   }
+
+  @media screen and (min-width: 1280px) {
+    width: 596px;
+    padding-top: 24px;
+    gap: 24px;
+  }
 `;
 
 export const Icon = styled.div`
@@ -53,12 +73,25 @@ export const Icon = styled.div`
   svg {
     stroke: var(--primary-color);
   }
+
+  @media screen and (min-width: 1280px) {
+    max-height: 87px;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
 `;
 
 export const Text = styled.div`
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  @media screen and (min-width: 1280px) {
+    gap: 24px;
+  }
 `;
 
 export const Question = styled.p`
@@ -69,6 +102,10 @@ export const Question = styled.p`
   line-height: normal;
   letter-spacing: -0.72px;
   color: var(--primary-color);
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+  }
 `;
 
 export const Answer = styled.p`
@@ -79,6 +116,10 @@ export const Answer = styled.p`
   line-height: normal;
   letter-spacing: -0.56px;
   color: var(--primary-color);
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 `;
 
 export const ToContact = styled.div`
@@ -92,5 +133,9 @@ export const ToContact = styled.div`
     position: absolute;
     right: 44px;
     bottom: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    right: 51px;
   }
 `;

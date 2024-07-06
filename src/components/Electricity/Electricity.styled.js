@@ -15,4 +15,10 @@ export const Title = styled.h2`
     width: 368px;
     font-size: 36px;
   }
+
+  @media screen and (min-width: 1280px) {
+    width: 491px;
+    font-size: 48px;
+    margin: 0 auto 16px;
+  }
 `;

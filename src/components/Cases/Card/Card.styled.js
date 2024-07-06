@@ -6,6 +6,10 @@ export const Wrapper = styled.div`
   @media screen and (min-width: 768px) {
     min-height: 342px;
   }
+
+  @media screen and (min-width: 1280px) {
+    min-height: 506px;
+  }
 `;
 
 export const Image = styled.img`
@@ -16,26 +20,18 @@ export const Image = styled.img`
 export const Info = styled.div`
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
   justify-content: space-between;
-  /* gap: 34px; */
   min-height: 114px;
   padding: 24px 12px 12px;
   background: var(--bg-slider-card);
-  /* position: relative; */
-
-  /* &::before {
-    content: '';
-    position: absolute;
-    bottom: 38px;
-    left: 12px;
-    width: calc(100% - 24px);
-    height: 1px;
-    background-color: var(--light-green);
-  } */
 
   @media screen and (min-width: 768px) {
     min-height: 118px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 36px 48px;
+    min-height: 138px;
   }
 `;
 
@@ -48,10 +44,13 @@ export const TitleBlock = styled.div`
   @media screen and (min-width: 768px) {
     gap: 28px;
   }
+
+  @media screen and (min-width: 1280px) {
+    gap: 83px;
+  }
 `;
 
 export const Title = styled.p`
-  /* width: 175px; */
   text-align: justify;
   font-family: Fira Sans;
   font-size: 18px;
@@ -64,15 +63,15 @@ export const Title = styled.p`
     text-align: start;
     font-size: 20px;
   }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+  }
 `;
 
 export const Button = styled.a`
-  /* display: inline-flex;
-  justify-content: center;
-  align-items: center; */
   width: 60px;
   height: 60px;
-  /* padding: 16px; */
   border-radius: 100px;
   transition: var(--transition);
   background: var(--light-green);
@@ -99,8 +98,6 @@ export const SubTitleBlock = styled.div`
   justify-content: space-between;
   width: 100%;
   position: relative;
-  /* padding-top: 12px;
-  border-top: 1px solid var(--light-green); */
 
   &::before {
     content: '';
@@ -111,12 +108,15 @@ export const SubTitleBlock = styled.div`
     height: 1px;
     background-color: var(--light-green);
   }
+
+  @media screen and (min-width: 1280px) {
+    &::before {
+      top: -24px;
+    }
+  }
 `;
 
 export const SubTitle = styled.p`
-  /* display: flex;
-  align-items: flex-end;
-  width: fit-content; */
   text-align: justify;
   font-family: Fira Sans;
   font-size: 12px;
@@ -127,6 +127,10 @@ export const SubTitle = styled.p`
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
   }
 `;
 

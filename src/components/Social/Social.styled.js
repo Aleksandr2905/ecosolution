@@ -24,6 +24,10 @@ export const Wrapper = styled.div`
 export const ContactWrapper = styled(Wrapper)`
   a {
     padding: 12px;
+
+    @media screen and (min-width: 1280px) {
+      padding: 0;
+    }
   }
 `;
 

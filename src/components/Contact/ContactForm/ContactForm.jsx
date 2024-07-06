@@ -69,7 +69,7 @@ const ContactForm = () => {
         />
         <s.ErrorText>{errors.phone?.message}</s.ErrorText>
       </s.Label>
-      <s.Label htmlFor="message">
+      <s.Textarea htmlFor="message">
         Message:
         <s.Message
           id="message"
@@ -78,8 +78,8 @@ const ContactForm = () => {
           {...register('message')}
           $errors={!!errors.message}
         />
-        <s.ErrorText>{errors.message?.message}</s.ErrorText>
-      </s.Label>
+        {/* <s.ErrorText>{errors.message?.message}</s.ErrorText> */}
+      </s.Textarea>
       <s.Button type="submit">
         Send
         <svg width="16" height="16">

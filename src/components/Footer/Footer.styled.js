@@ -16,6 +16,12 @@ export const Wrapper = styled.footer`
     margin: 100px auto 0;
     padding: 40px 30px;
   }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    margin: 120px auto 0;
+    padding: 40px 20px;
+  }
 `;
 
 export const Title = styled.div`
@@ -45,6 +51,10 @@ export const Title = styled.div`
       top: -40px;
     }
   }
+
+  @media screen and (min-width: 1280px) {
+    gap: 512px;
+  }
 `;
 
 export const ContactBlock = styled.div`
@@ -56,6 +66,10 @@ export const ContactBlock = styled.div`
   @media screen and (min-width: 768px) {
     flex-direction: row;
     gap: 50px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 0;
   }
 `;
 
@@ -70,6 +84,10 @@ export const Address = styled.address`
   @media screen and (min-width: 768px) {
     margin-right: 27px;
   }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 488px;
+  }
 `;
 
 export const Email = styled.a`
@@ -83,6 +101,10 @@ export const Email = styled.a`
 
   &:hover {
     color: var(--light-green);
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 171px;
   }
 `;
 

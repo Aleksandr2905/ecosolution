@@ -8,6 +8,10 @@ export const TitleBlock = styled.div`
     justify-content: space-between;
     margin-bottom: 100px;
   }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 124px;
+  }
 `;
 
 export const Title = styled.h2`
@@ -23,6 +27,11 @@ export const Title = styled.h2`
     width: 272px;
     font-size: 36px;
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 365px;
+    font-size: 48px;
   }
 `;
 
@@ -42,6 +51,11 @@ export const SubTitle = styled.p`
     letter-spacing: -0.64px;
     border-left: 1px solid var(--light-green);
   }
+
+  @media screen and (min-width: 1280px) {
+    width: 620px;
+    padding-left: 161px;
+  }
 `;
 
 export const List = styled.ul`
@@ -57,5 +71,9 @@ export const List = styled.ul`
     > :nth-child(4) {
       grid-column-end: span 2;
     }
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 48px;
   }
 `;

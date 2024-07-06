@@ -20,7 +20,6 @@ export const schema = yup.object().shape({
     .string()
     .required('Phone is required')
     .matches(phoneRegexp, 'Wrong Phone'),
-  message: yup.string().max(500, 'Maximum 500 characters'),
 });
 
 export default schema;

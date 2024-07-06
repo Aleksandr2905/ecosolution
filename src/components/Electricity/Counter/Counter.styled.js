@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 310px;
+  gap: 8px;
   margin: 96px auto 0;
   position: relative;
 
@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
   }
 
   @media screen and (min-width: 768px) {
-    width: 620px;
+    gap: 24px;
     margin: 135px auto 0;
 
     &::before {
@@ -28,10 +28,18 @@ export const Wrapper = styled.div`
       height: 87px;
     }
   }
+
+  @media screen and (min-width: 1280px) {
+    margin: 120px auto 0;
+
+    &::before {
+      top: -104px;
+    }
+  }
 `;
 
 export const Count = styled.h3`
-  /* text-align: center; */
+  width: 274px;
   font-family: Oswald Bold;
   font-size: 48px;
   font-weight: 700;
@@ -41,8 +49,13 @@ export const Count = styled.h3`
   letter-spacing: -0.4px;
 
   @media screen and (min-width: 768px) {
-    width: 708px;
+    width: 564px;
     font-size: 100px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 950px;
+    font-size: 164px;
   }
 `;
 
@@ -56,5 +69,9 @@ export const Units = styled.h4`
 
   @media screen and (min-width: 768px) {
     font-size: 28px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 48px;
   }
 `;

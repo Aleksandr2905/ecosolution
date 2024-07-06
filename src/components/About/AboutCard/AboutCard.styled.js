@@ -4,6 +4,11 @@ export const Wrapper = styled.li`
   padding: 12px;
   height: 197px;
   background-color: var(--bg-slider-card);
+
+  @media screen and (min-width: 1280px) {
+    padding: 48px 24px;
+    height: 339px;
+  }
 `;
 
 export const Title = styled.h3`
@@ -21,6 +26,16 @@ export const Title = styled.h3`
   svg {
     stroke: var(--primary-color);
   }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 32px;
+    margin-bottom: 94px;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
 `;
 
 export const Text = styled.p`
@@ -33,4 +48,9 @@ export const Text = styled.p`
   line-height: normal;
   letter-spacing: -0.56px;
   color: var(--primary-color);
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 24px;
+    font-size: 16px;
+  }
 `;
