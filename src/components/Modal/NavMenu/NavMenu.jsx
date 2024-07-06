@@ -1,5 +1,5 @@
-import { navigation } from '../../../data/navigation';
 import sprite from '../../../assets/icons/sprite.svg';
+import { navigation } from '../../../data/navigation';
 import Social from '../../Social/Social';
 import * as s from './NavMenu.styled';
 

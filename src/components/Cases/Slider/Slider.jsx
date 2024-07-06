@@ -4,9 +4,9 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { useMediaQuery } from 'react-responsive';
-import Card from '../Card/Card';
 import { slidesImage } from '../../../data/cases';
 import sprite from '../../../assets/icons/sprite.svg';
+import Card from '../Card/Card';
 import * as s from './Slider.styled';
 
 const Slider = ({ title }) => {

@@ -1,9 +1,9 @@
 import { useState } from 'react';
+import sprite from '../../assets/icons/sprite.svg';
 import { text } from '../../data/faq';
 import Section from '../Section/Section';
-import sprite from '../../assets/icons/sprite.svg';
-import * as s from './Faq.styled';
 import Button from '../Button/Button';
+import * as s from './Faq.styled';
 
 const Faq = () => {
   const { id, title, listFaq, notAnswer, button } = text;

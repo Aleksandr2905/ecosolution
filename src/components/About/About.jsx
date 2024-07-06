@@ -1,8 +1,8 @@
 import { text } from '../../data/about';
 import Section from '../Section/Section';
-import * as s from './About.styled';
 import AboutCard from './AboutCard/AboutCard';
 import AboutImage from './AboutImage/AboutImage';
+import * as s from './About.styled';
 
 const About = () => {
   const { id, title, description, values } = text;

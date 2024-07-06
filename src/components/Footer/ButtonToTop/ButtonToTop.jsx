@@ -1,5 +1,4 @@
 import sprite from '../../../assets/icons/sprite.svg';
-
 import * as s from './ButtonToTop.styled';
 
 const ButtonToTop = () => {

@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import sprite from '../../../assets/icons/sprite.svg';
-import * as s from './Burger.styled';
 import Modal from '../../Modal/Modal';
 import NavMenu from '../../Modal/NavMenu/NavMenu';
+import * as s from './Burger.styled';
 
 const Burger = () => {
   const [showNavMenu, setShowNavMenu] = useState(false);

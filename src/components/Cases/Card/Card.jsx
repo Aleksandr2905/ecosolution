@@ -1,5 +1,5 @@
-import * as s from './Card.styled';
 import sprite from '../../../assets/icons/sprite.svg';
+import * as s from './Card.styled';
 
 const Card = ({ slide }) => {
   const { id, webp, jpg, title, subTitle, date } = slide;

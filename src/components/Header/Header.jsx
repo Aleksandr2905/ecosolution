@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
 import Logo from '../Logo/Logo';
+import Button from '../Button/Button';
 import Burger from './Burger/Burger';
 import * as s from './Header.styled';
-import Button from '../Button/Button';
-import { useMediaQuery } from 'react-responsive';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);

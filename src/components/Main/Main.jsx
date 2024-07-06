@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
+import sprite from '../../assets/icons/sprite.svg';
 import { heroImageAdaptive, text } from '../../data/main';
 import { useScreenWidth } from '../../hooks/useScreenWidth';
-import sprite from '../../assets/icons/sprite.svg';
 import Section from '../Section/Section';
 import * as s from './Main.styled';
 

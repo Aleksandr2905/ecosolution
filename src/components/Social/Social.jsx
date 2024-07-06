@@ -1,5 +1,5 @@
-import { social } from '../../data/social';
 import sprite from '../../assets/icons/sprite.svg';
+import { social } from '../../data/social';
 import * as s from './Social.styled';
 
 const Social = ({ style }) => {

@@ -1,7 +1,7 @@
-import { text } from '../../../data/contact';
-import * as s from './ContactBlock.styled';
 import sprite from '../../../assets/icons/sprite.svg';
+import { text } from '../../../data/contact';
 import Social from '../../Social/Social';
+import * as s from './ContactBlock.styled';
 
 const ContactBlock = () => {
   const { tel1, tel2, email, address } = text.info;
