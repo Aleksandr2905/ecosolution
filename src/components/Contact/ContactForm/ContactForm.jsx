@@ -34,16 +34,20 @@ const ContactForm = () => {
   const onSubmit = (data) => {
     try {
       const { username, email, phone } = data;
-      Report.success(
-        'Successfully sent!',
-        `${username}, We will contact you shortly at the specified phone number ${phone} and send additional information by email ${email}.`,
-        'Ok'
-      );
+      setTimeout(() => {
+        Report.success(
+          'Successfully sent!',
+          `${username}, We will contact you shortly at the specified phone number ${phone} and send additional information by email ${email}.`,
+          'Ok'
+        );
+      }, 1000);
 
       reset();
       localStorage.removeItem('formData');
     } catch (error) {
-      Report.failure('Error!', 'Something went wrong, try again.', 'Ok');
+      setTimeout(() => {
+        Report.failure('Error!', 'Something went wrong, try again.', 'Ok');
+      }, 1000);
     }
   };
 
