@@ -10,7 +10,14 @@ const Burger = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['main', 'about', 'cases', 'faq', 'contact'];
+      const sections = [
+        'main',
+        'about',
+        'electricity',
+        'cases',
+        'faq',
+        'contact',
+      ];
       const currentSection = sections.find((section) => {
         const sectionElement = document.getElementById(section);
         if (sectionElement) {
@@ -19,9 +26,10 @@ const Burger = () => {
         }
         return sectionElement;
       });
+
       if (currentSection) {
-        setActiveSection(currentSection);
-      } else setActiveSection('');
+        setActiveSection(currentSection || 'main');
+      }
     };
 
     window.addEventListener('scroll', handleScroll);

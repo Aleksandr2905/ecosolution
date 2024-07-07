@@ -54,8 +54,8 @@ const Modal = ({ show, handleClose, children }) => {
 
   return createPortal(
     show && (
-      <s.Backdrop onClick={handleBackdrop}>
-        <s.Wrapper>
+      <s.Backdrop>
+        <s.Wrapper onClick={handleBackdrop}>
           <s.Container ref={modalRef} onClick={(e) => e.stopPropagation()}>
             <s.CloseBtn onClick={handleClose} type="button" aria-label="Close">
               <svg width={20} height={20}>
