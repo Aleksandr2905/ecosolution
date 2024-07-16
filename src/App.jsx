@@ -1,11 +1,11 @@
-import About from './components/About/About';
-import Cases from './components/Cases/Cases';
-import Contact from './components/Contact/Contact';
-import Electricity from './components/Electricity/Electricity';
-import Faq from './components/Faq/Faq';
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
-import Main from './components/Main/Main';
+import About from './sections/About/About';
+import Cases from './sections/Cases/Cases';
+import Contact from './sections/Contact/Contact';
+import Electricity from './sections/Electricity/Electricity';
+import Faq from './sections/Faq/Faq';
+import Footer from './sections/Footer/Footer';
+import Header from './sections/Header/Header';
+import Main from './sections/Main/Main';
 
 function App() {
   return (
