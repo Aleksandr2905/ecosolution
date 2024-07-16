@@ -246,7 +246,6 @@ Report.init({
   zindex: 4002,
   backOverlay: true,
   backOverlayColor: 'rgba(23, 61, 51, 0.25)',
-  backOverlayFilter: 'blur(2px)',
   backOverlayClickToClose: false,
   fontFamily: 'Fira Sans',
   svgSize: '110px',
@@ -267,7 +266,6 @@ Report.init({
     buttonBackground: `var(--light-green)`,
     buttonColor: `var(--primary-color)`,
     backOverlayColor: 'rgba(23, 61, 51, 0.35)',
-    backOverlayFilter: 'blur(2px)',
   },
   failure: {
     svgColor: `var(--error)`,
@@ -276,6 +274,5 @@ Report.init({
     buttonBackground: `var(--error)`,
     buttonColor: `var(--primary-color)`,
     backOverlayColor: 'rgba(23, 61, 51, 0.35)',
-    backOverlayFilter: 'blur(2px)',
   },
 });

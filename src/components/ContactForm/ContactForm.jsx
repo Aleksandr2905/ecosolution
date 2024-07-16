@@ -34,19 +34,31 @@ const ContactForm = () => {
   const onSubmit = (data) => {
     try {
       const { username, email, phone } = data;
+      document.body.classList.add('no-scroll');
       setTimeout(() => {
         Report.success(
           'Successfully sent!',
           `${username}, We will contact you shortly at the specified phone number ${phone} and send additional information by email ${email}.`,
-          'Ok'
+          'Ok',
+          () => {
+            document.body.classList.remove('no-scroll');
+          }
         );
       }, 1000);
 
       reset();
       localStorage.removeItem('formData');
     } catch (error) {
+      document.body.classList.add('no-scroll');
       setTimeout(() => {
-        Report.failure('Error!', 'Something went wrong, try again.', 'Ok');
+        Report.failure(
+          'Error!',
+          'Something went wrong, try again.',
+          'Ok',
+          () => {
+            document.body.classList.remove('no-scroll');
+          }
+        );
       }, 1000);
     }
   };
