@@ -80,13 +80,20 @@ export const CloseBtn = styled.button`
     transition: var(--transition);
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--light-green);
 
     svg {
       stroke: var(--light-green);
       transform: rotate(90deg);
     }
+  }
+
+  &:focus {
+    outline: 1px solid var(--light-green);
+    outline-offset: 4px;
+    border-radius: 500px;
   }
 
   @media screen and (min-width: 1280px) {

@@ -37,12 +37,19 @@ export const NavItem = styled.a`
     fill: none;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--white);
 
     svg {
       stroke: var(--white);
     }
+  }
+
+  &:focus {
+    outline: 1px solid var(--light-green);
+    outline-offset: 4px;
+    border-radius: 500px;
   }
 
   &.active {

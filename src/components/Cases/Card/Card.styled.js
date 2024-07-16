@@ -84,12 +84,18 @@ export const Button = styled.a`
     fill: none;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background: var(--primary-color);
 
     svg {
       stroke: var(--light-green);
     }
+  }
+
+  &:focus {
+    outline: 1px solid var(--light-green);
+    outline-offset: 4px;
   }
 `;
 

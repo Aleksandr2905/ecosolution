@@ -16,7 +16,13 @@ export const BurgerButton = styled.button`
     stroke: var(--primary-color);
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(--light-green);
+  }
+
+  &:focus {
+    outline: 1px solid var(--light-green);
+    outline-offset: 4px;
   }
 `;

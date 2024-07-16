@@ -52,10 +52,17 @@ export const Link = styled.a`
     stroke: var(--primary-color);
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     svg {
       stroke: var(--light-green);
     }
+  }
+
+  &:focus {
+    outline: 1px solid var(--light-green);
+    outline-offset: 4px;
+    border-radius: 500px;
   }
 
   @media screen and (min-width: 1280px) {

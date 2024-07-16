@@ -99,12 +99,18 @@ export const BtnNext = styled.button`
     fill: none;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     border: 1px solid var(--light-green);
 
     svg {
       stroke: var(--light-green);
     }
+  }
+
+  &:focus {
+    outline: 1px solid var(--light-green);
+    outline-offset: 4px;
   }
 
   @media screen and (min-width: 1280px) {

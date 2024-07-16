@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 
 export const ScrollButton = styled.button`
+  display: flex;
   position: absolute;
   top: 28px;
   right: 20px;
   padding: 0;
   border: none;
+  border-radius: 50%;
   background: transparent;
   z-index: 10;
 
@@ -33,10 +35,16 @@ export const ScrollButton = styled.button`
     fill: none;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     svg {
       background: var(--primary-color);
       stroke: var(--light-green);
+    }
+
+    &:focus {
+      outline: 1px solid var(--light-green);
+      outline-offset: 4px;
     }
   }
 `;

@@ -95,10 +95,16 @@ export const Button = styled.a`
     fill: none;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--light-green);
     border: 1px solid var(--primary-color);
     background: var(--primary-color);
+  }
+
+  &:focus {
+    outline: 1px solid var(--light-green);
+    outline-offset: 4px;
   }
 
   @media screen and (min-width: 768px) {
@@ -140,8 +146,15 @@ export const Email = styled.a`
   transition: var(--transition);
   color: var(--primary-color);
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--light-green);
+  }
+
+  &:focus {
+    outline: 1px solid var(--light-green);
+    outline-offset: 4px;
+    border-radius: 500px;
   }
 `;
 

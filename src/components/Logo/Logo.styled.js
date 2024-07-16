@@ -12,8 +12,15 @@ export const Title = styled.a`
   transition: var(--transition);
   color: var(--primary-color);
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--light-green);
+  }
+
+  &:focus {
+    outline: 1px solid var(--light-green);
+    border-radius: 500px;
+    outline-offset: 4px;
   }
 
   svg {

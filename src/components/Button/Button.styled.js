@@ -30,12 +30,18 @@ export const Wrapper = styled.a`
     fill: none;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background: var(--primary-color);
     color: var(--light-green);
 
     svg {
       background: var(--light-green);
     }
+  }
+
+  &:focus {
+    outline: 1px solid var(--light-green);
+    outline-offset: 4px;
   }
 `;

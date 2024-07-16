@@ -7,6 +7,17 @@ export const Wrapper = styled.div`
   a {
     display: flex;
     align-items: center;
+
+    &:focus {
+      outline: 1px solid var(--light-green);
+      border-radius: 4px;
+      outline-offset: 4px;
+
+      svg {
+        fill: var(--light-green);
+        stroke: var(--light-green);
+      }
+    }
   }
 
   svg {
@@ -14,9 +25,15 @@ export const Wrapper = styled.div`
     fill: var(--primary-color);
     stroke: var(--primary-color);
 
-    &:hover {
+    &:hover,
+    &:focus {
       fill: var(--light-green);
       stroke: var(--light-green);
+    }
+
+    &:focus {
+      outline: 1px solid var(--light-green);
+      outline-offset: 4px;
     }
   }
 `;

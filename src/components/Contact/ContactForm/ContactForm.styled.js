@@ -225,10 +225,16 @@ export const Button = styled.button`
     fill: none;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--light-green);
     border: 1px solid var(--primary-color);
     background: var(--primary-color);
+  }
+
+  &:focus {
+    outline: 1px solid var(--light-green);
+    outline-offset: 4px;
   }
 `;
 

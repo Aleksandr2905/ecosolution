@@ -99,8 +99,15 @@ export const Email = styled.a`
   transition: var(--transition);
   color: var(--primary-color);
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--light-green);
+  }
+
+  &:focus {
+    outline: 1px solid var(--light-green);
+    outline-offset: 4px;
+    border-radius: 500px;
   }
 
   @media screen and (min-width: 1280px) {
